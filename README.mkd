@@ -1,0 +1,39 @@
+Clean RTorrent watchdir
+=======================
+
+I Encountered the case where my watchdir was desynchronized with my session
+directory, so I wrote this little (not so clean) script to clean my old unused
+torrents.
+
+Requires:
+  * python3
+  * argparse
+
+Usage
+-----
+
+Run `clean_rtorrent_watchdir.py`:
+
+```
+$ python3 clean_rtorrent_watchdir.py -h
+
+usage: clean_rtorrent_watchdir.py [-h] [-D] session_dir watch_dir
+
+Clean torrents of a watch directory when they are not in the session directory
+anymore
+
+positional arguments:
+  session_dir   rtorrent session dir
+  watch_dir     rtorrent watch dir
+
+optional arguments:
+  -h, --help    show this help message and exit
+  -D, --dryrun  dry run, to print files that would normally be removed
+```
+
+
+License
+-------
+
+Tool under the BSD license. Do not hesitate to report bugs, ask me some
+questions or do some pull request if you want to!
