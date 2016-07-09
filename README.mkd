@@ -1,9 +1,9 @@
 Clean RTorrent watchdir
 =======================
 
-I Encountered the case where my watchdir was desynchronized with my session
-directory, so I wrote this little (not so clean) script to clean my old unused
-torrents.
+I encountered the case where my rtorrent watchdir was desynchronized with my
+session directory, so I wrote this little (not so clean) script to clean my old
+unused torrents.
 
 Requires:
   * python3
