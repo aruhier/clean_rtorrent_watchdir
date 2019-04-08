@@ -22,7 +22,7 @@ def hash_all_torrents(source_dir):
 
 
 def clean(session_dir, watch_dir, dryrun=True):
-    session_torrents_hash = tuple(r[1] for r in hash_all_torrents(session_dir))
+    session_torrents_hash = set(r[1] for r in hash_all_torrents(session_dir))
     for torrent, t_hash in hash_all_torrents(watch_dir):
         if t_hash in session_torrents_hash:
             continue
